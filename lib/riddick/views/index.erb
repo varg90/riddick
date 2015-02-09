@@ -17,7 +17,7 @@
   <div class="container">
     <div class="navbar">
       <div class="navbar-inner">
-        <a href="<%= '/' %>" class="brand"><%= t 'nav.brand', 'Riddick' %></a>
+        <a href="<%= "/#{I18n.locale.to_s}" %>" class="brand"><%= t 'nav.brand', 'Riddick' %></a>
         <ul class="nav">
           <li class="<%= 'active' if request.path == root_url %>">
             <a href="<%= root_url %>"><%= t 'nav.all', 'All translations' %></a></li>
